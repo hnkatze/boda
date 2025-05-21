@@ -18,8 +18,8 @@ async function getGuestByCode(code: string) {
   return null
 }
 
-export default async function RSVPPage({ params }: { params: { code: string } }) {
-  const { code } = params
+export default async function RSVPPage({ params }: { params:Promise<{ code: string }> }) {
+  const { code } = await params
   const guest = await getGuestByCode(code)
 
   // Si no se encuentra el invitado, mostrar página 404
