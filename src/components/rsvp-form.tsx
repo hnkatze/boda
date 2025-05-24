@@ -4,32 +4,28 @@ import type React from "react"
 
 import { useState } from "react"
 import { useRouter } from "next/navigation"
+import { updateInvitationRSVP } from "@/api/crude"
+import type { Invitation } from "@/types/type"
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Textarea } from "@/components/ui/textarea"
 
-interface GuestData {
-  name: string
-  email: string
-  maxGuests: number
-}
-
 interface RSVPFormProps {
-  guestData: GuestData
+  guestData: Invitation
   code: string
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export function RSVPForm({ guestData, code }: RSVPFormProps) {
   const router = useRouter()
   const [formData, setFormData] = useState({
     name: guestData.name,
-    email: guestData.email,
-    phone: "",
-    attendance: "yes",
-    guests: "1",
-    message: "",
+    cellphone: guestData.cellphone,
+    attendance: guestData.confirmation ? (guestData.isAssist ? "yes" : "no") : "yes",
+    guests: guestData.confirmation ? String(guestData.countGuests) : "1",
+    message: guestData.message || "",
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [successMessage, setSuccessMessage] = useState("")
@@ -51,13 +47,15 @@ export function RSVPForm({ guestData, code }: RSVPFormProps) {
     setErrorMessage("")
 
     try {
-      // Aquí iría la lógica para enviar los datos a un servidor
-      // Simulamos una petición con un timeout
-      await new Promise((resolve) => setTimeout(resolve, 1500))
+      if (!guestData.id) {
+        throw new Error("ID de invitación no disponible")
+      }
 
-      console.log("Form submitted:", { ...formData, code })
+      const isAssist = formData.attendance === "yes"
+      const countGuests = isAssist ? Number.parseInt(formData.guests) || 1 : 0
 
-      // Mostrar mensaje de confirmación
+      await updateInvitationRSVP(guestData.id, isAssist, countGuests, formData.message)
+
       setSuccessMessage("¡Gracias por confirmar! Hemos recibido tu confirmación de asistencia.")
 
       // Redirigir a la página principal después de 2 segundos
@@ -80,13 +78,8 @@ export function RSVPForm({ guestData, code }: RSVPFormProps) {
       </div>
 
       <div className="space-y-2">
-        <Label htmlFor="email">Correo Electrónico</Label>
-        <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} required disabled />
-      </div>
-
-      <div className="space-y-2">
-        <Label htmlFor="phone">Teléfono</Label>
-        <Input id="phone" name="phone" value={formData.phone} onChange={handleChange} required />
+        <Label htmlFor="cellphone">Teléfono</Label>
+        <Input id="cellphone" name="cellphone" value={formData.cellphone} onChange={handleChange} required disabled />
       </div>
 
       <div className="space-y-2">

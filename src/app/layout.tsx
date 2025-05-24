@@ -2,6 +2,7 @@ import type React from "react"
 import "./globals.css"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import { Toaster } from "@/components/ui/toaster"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
 
@@ -26,6 +27,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`font-sans ${inter.variable}`}>{children}</body>
+       <Toaster />
     </html>
   )
 }
