@@ -6,7 +6,7 @@ import { RSVPForm } from "@/components/rsvp-form"
 import type { Invitation } from "@/types/type"
 import { getInvitationByCode } from "@/api/crude"
 
-export default function RSVPPage({ params }: { params: { code: string } }) {
+export default function RSVPPage({ params }: { params: Promise<{ code: string }> }) {
   const [guest, setGuest] = useState<Invitation | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -15,7 +15,7 @@ export default function RSVPPage({ params }: { params: { code: string } }) {
   useEffect(() => {
     const fetchGuest = async () => {
       try {
-        const { code } = params
+        const { code } =await  params
         if (!code) {
           router.push("/")
           return
