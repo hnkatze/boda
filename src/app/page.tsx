@@ -377,7 +377,7 @@ export default function Home() {
             </h2>
 
             <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-              <div className="bg-white p-8 rounded-lg shadow-md">
+              <div className=" w-[358px]  h-[392px] py-2 shadow-lg rounded-lg flex flex-col items-center justify-center p-4 md:p-8 bg-white">
                 <h3 className="font-serif text-2xl text-rose-800 mb-6 text-center">
                   Colores Reservados para los novios
                 </h3>
@@ -398,11 +398,11 @@ export default function Home() {
                     alt="novios"
                     width={400}
                     height={400}
-                    className="object-contain w-52 h-52"
+                    className="object-contain w-44 h-44"
                   />
                 </div>
               </div>
-              <div className="bg-white p-8 rounded-lg shadow-md flex flex-col items-center justify-center">
+              <div className=" w-[358px]  h-[392px] py-2 shadow-lg rounded-lg flex flex-col items-center justify-center p-4 md:p-8 bg-white">
                 <h3 className="font-serif text-2xl text-rose-800 mb-6 text-center">
                   Codigo de vestimenta invitados
                 </h3>
@@ -420,7 +420,8 @@ export default function Home() {
                   className="object-contain w-44 h-44"
                 />
               </div>
-
+            </div>
+            <div className=" grid md:grid-cols-2 gap-12 max-w-4xl mx-auto mt-10">
               <CardsTitle
                 title="Solo Adultos"
                 description="Adoramos a sus hijos,pero para esta ocasión queremos que pases una increíble noche y disfrutes sin preocupaciones.
