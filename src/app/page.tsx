@@ -376,7 +376,7 @@ export default function Home() {
               Información Importante
             </h2>
 
-            <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 justify-center max-w-4xl mx-auto">
               <div className=" w-[358px]  h-[392px] py-2 shadow-lg rounded-lg flex flex-col items-center justify-center p-4 md:p-8 bg-white">
                 <h3 className="font-serif text-2xl text-rose-800 mb-6 text-center">
                   Colores Reservados para los novios
@@ -421,7 +421,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className=" grid md:grid-cols-2 gap-12 max-w-4xl mx-auto mt-10">
+            <div className=" grid md:grid-cols-2 gap-12 justify-center max-w-4xl mx-auto mt-10">
               <CardsTitle
                 title="Solo Adultos"
                 description="Adoramos a sus hijos,pero para esta ocasión queremos que pases una increíble noche y disfrutes sin preocupaciones.
@@ -453,7 +453,7 @@ export default function Home() {
             <div className="max-w-4xl mx-auto">
               <div className="relative h-[400px] w-full rounded-lg overflow-hidden shadow-xl mb-8">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123019.99214985897!2d-86.02393087776903!3d15.91726324827251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f69a7a846d67b7d%3A0x4d5b9b7d38c9c1a9!2sTrujillo%2C%20Honduras!5e0!3m2!1ses!2ses!4v1716232063121!5m2!1ses!2ses"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.420725112586!2d-85.93862102404838!3d15.92859358798139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6a37f9269eebd5%3A0x52fb59bf643b8ed1!2sW3H7%2BFC4%2C%20Unnamed%20Road%2C%20Trujillo%2C%20Col%C3%B3n!5e0!3m2!1ses!2shn!4v1718309600000!5m2!1ses!2shn"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -461,7 +461,7 @@ export default function Home() {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   className="absolute inset-0"
-                ></iframe>
+                />
               </div>
 
               <div className="text-center">
@@ -485,7 +485,7 @@ export default function Home() {
       </section>
 
       {/* Confirmación de Asistencia */}
-      <section className="py-20 bg-rose-100">
+      {/* <section className="py-20 bg-rose-100">
         <div className="container mx-auto px-4">
           <ScrollReveal>
             <h2 className="font-dancing text-4xl md:text-5xl text-center text-rose-800 mb-6">
@@ -501,10 +501,10 @@ export default function Home() {
             </div>
           </ScrollReveal>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
-      <footer className="py-8 bg-white">
+      <footer className="py-8  bg-rose-100">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-dancing text-3xl text-rose-800 mb-4">
             Bryan & Genesis
