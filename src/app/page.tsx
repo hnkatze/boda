@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Countdown } from "@/components/countdown";
 import { MusicPlayer } from "@/components/music-player";
-import { RSVPButton } from "@/components/rsvp-button";
 import { ScrollReveal } from "@/components/scroll-reveal";
 import { Clock, MapPin, Heart, Camera } from "lucide-react";
 import { Gallery } from "@/components/gallery";
