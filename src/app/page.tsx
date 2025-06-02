@@ -89,7 +89,7 @@ export default function Home() {
                   <h3 className="font-serif text-xl text-rose-800 mb-2">
                     Hora
                   </h3>
-                  <p className="text-rose-700">6:00 PM</p>
+                  <p className="text-rose-700">4:00 PM</p>
                 </div>
 
                 <div className="text-center">
@@ -469,7 +469,7 @@ export default function Home() {
                 </h3>
                 <p className="text-rose-700 mb-6">Trujillo, Colón, Honduras</p>
                 <a
-                  href="https://maps.app.goo.gl/example"
+                  href="https://maps.app.goo.gl/LThc2xucx2NQhtaU7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-6 py-3 bg-rose-600 text-white rounded-full hover:bg-rose-700 transition-colors"
