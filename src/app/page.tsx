@@ -61,6 +61,66 @@ export default function Home() {
         </div>
       </section>
 
+            {/* Reproductor de Música */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <ScrollReveal>
+            <h2 className="font-dancing text-4xl md:text-5xl text-center text-rose-800 mb-12">
+              Nuestra Canción
+            </h2>
+
+            <div className="max-w-2xl mx-auto">
+              <MusicPlayer />
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+          {/* Nuestra Historia */}
+      <section className="py-20 bg-rose-50">
+        <div className="container mx-auto px-4">
+          <ScrollReveal>
+            <h2 className="font-dancing text-4xl md:text-5xl text-center text-rose-800 mb-12">
+              Nuestra Historia
+            </h2>
+
+            <div className="flex flex-col md:flex-row items-center max-w-5xl mx-auto">
+              <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                <div className="relative h-max w-full rounded-lg overflow-hidden shadow-xl ">
+                  <Image
+                    src="https://res.cloudinary.com/djluqrprg/image/upload/f_auto,q_auto/v1/boda/r19ea5pdxqyabo0h5wx1"
+                    width={500}
+                    height={400}
+                    alt="Bryan y Genesis"
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+
+              <div className="md:w-1/2">
+                <p className="text-rose-700 leading-relaxed mb-6">
+                  La tarde lluviosa del 13 de diciembre 2023 coincidimos por
+                  primera vez en un café. No teníamos la más remota idea de que
+                  ese simple saludo de cortesía se convertiría en tan solo el
+                  primero de tantos días juntos. Pues Meses después Dios nos
+                  permitió coincidir nuevamente y comenzar a invertir tiempo
+                  juntos para conocernos. Así es como nació nuestra historia de
+                  amor.
+                </p>
+                <p className="text-rose-700 leading-relaxed">
+                  Una historia que Dios ha bendecido y en la que nos ha
+                  permitido confirmar que es Su voluntad que unamos nuestras
+                  vidas en matrimonio hasta el fin de nuestros días. Es por eso
+                  que queremos que estés presente en este día tan especial en el
+                  que juraremos nuestro amor delante de Dios y de las personas
+                  importantes de nuestras vidas como testigos.
+                </p>
+              </div>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* Fecha y Lugar */}
       <section id="fecha" className="py-10 bg-white min-h-screen">
         <div className="container mx-auto px-4">
@@ -109,48 +169,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Nuestra Historia */}
-      <section className="py-20 bg-rose-50">
-        <div className="container mx-auto px-4">
-          <ScrollReveal>
-            <h2 className="font-dancing text-4xl md:text-5xl text-center text-rose-800 mb-12">
-              Nuestra Historia
-            </h2>
 
-            <div className="flex flex-col md:flex-row items-center max-w-5xl mx-auto">
-              <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
-                <div className="relative h-max w-full rounded-lg overflow-hidden shadow-xl ">
-                  <Image
-                    src="https://res.cloudinary.com/djluqrprg/image/upload/f_auto,q_auto/v1/boda/r19ea5pdxqyabo0h5wx1"
-                    width={500}
-                    height={400}
-                    alt="Bryan y Genesis"
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-
-              <div className="md:w-1/2">
-                <p className="text-rose-700 leading-relaxed mb-6">
-                  El amor verdadero no es el que te hace sonreír por un momento,
-                  sino el que te hace sonreír toda la vida. Así comenzó nuestra
-                  historia, con sonrisas que se convirtieron en un amor que
-                  durará para siempre.
-                </p>
-                <p className="text-rose-700 leading-relaxed">
-                  Después de años compartiendo sueños, risas y momentos
-                  inolvidables, hemos decidido dar el siguiente paso en nuestro
-                  camino juntos. Nos encantaría que nos acompañaras en este día
-                  tan especial para nosotros.
-                </p>
-              </div>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
 
       {/* Galería de Fotos */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-rose-50">
         <div className="container mx-auto px-4">
           <ScrollReveal>
             <h2 className="font-dancing text-4xl md:text-5xl text-center text-rose-800 mb-12">
@@ -352,20 +374,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Reproductor de Música */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <ScrollReveal>
-            <h2 className="font-dancing text-4xl md:text-5xl text-center text-rose-800 mb-12">
-              Nuestra Canción
-            </h2>
 
-            <div className="max-w-2xl mx-auto">
-              <MusicPlayer />
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
 
       {/* Código de Vestimenta y Reglas */}
       <section className="py-20 bg-rose-50">

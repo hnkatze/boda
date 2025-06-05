@@ -40,7 +40,7 @@ export function InvitationsTable({ refreshTrigger }: InvitationsTableProps) {
   }, [refreshTrigger])
 
   const handleCopyCode = (code: string) => {
-    navigator.clipboard.writeText(code)
+    navigator.clipboard.writeText(`https://www.boda-hernandez-lagos.online/${code}`)
     toast({
       title: "Código copiado",
       description: `El código ${code} ha sido copiado al portapapeles`,
