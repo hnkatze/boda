@@ -17,10 +17,10 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero-background.jpg"
+            src="https://res.cloudinary.com/djluqrprg/image/upload/f_auto,q_auto/v1/boda/gallery/hql6p3fumvmjoxwrflg1"
             alt="Bryan y Genesis"
             fill
-            className="object-cover opacity-40"
+            className="object-cover opacity-60"
             priority
           />
         </div>
@@ -88,7 +88,7 @@ export default function Home() {
               <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
                 <div className="relative h-max w-full rounded-lg overflow-hidden shadow-xl ">
                   <Image
-                    src="https://res.cloudinary.com/djluqrprg/image/upload/f_auto,q_auto/v1/boda/r19ea5pdxqyabo0h5wx1"
+                    src="https://res.cloudinary.com/djluqrprg/image/upload/f_auto,q_auto/v1/boda/gallery/gtb9ywaevv9ekuv2umk9"
                     width={500}
                     height={400}
                     alt="Bryan y Genesis"
