@@ -98,6 +98,7 @@ export async function updateInvitationRSVP(
   isAssist: boolean,
   countGuests: number,
   message: string,
+  cellphone: string,
 ): Promise<void> {
   const invitationRef = doc(db, "invitations", id)
   await updateDoc(invitationRef, {
@@ -105,5 +106,6 @@ export async function updateInvitationRSVP(
     isAssist,
     countGuests,
     message,
+    cellphone,
   })
 }

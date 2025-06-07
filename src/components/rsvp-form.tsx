@@ -19,6 +19,7 @@ interface RSVPFormProps {
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export function RSVPForm({ guestData, code }: RSVPFormProps) {
+
   const router = useRouter()
   const [formData, setFormData] = useState({
     name: guestData.name,
@@ -30,7 +31,6 @@ export function RSVPForm({ guestData, code }: RSVPFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [successMessage, setSuccessMessage] = useState("")
   const [errorMessage, setErrorMessage] = useState("")
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
@@ -54,7 +54,7 @@ export function RSVPForm({ guestData, code }: RSVPFormProps) {
       const isAssist = formData.attendance === "yes"
       const countGuests = isAssist ? Number.parseInt(formData.guests) || 1 : 0
 
-      await updateInvitationRSVP(guestData.id, isAssist, countGuests, formData.message)
+      await updateInvitationRSVP(guestData.id, isAssist, countGuests, formData.message, formData.cellphone)
 
       setSuccessMessage("¡Gracias por confirmar! Hemos recibido tu confirmación de asistencia.")
 
@@ -79,7 +79,7 @@ export function RSVPForm({ guestData, code }: RSVPFormProps) {
 
       <div className="space-y-2">
         <Label htmlFor="cellphone">Teléfono</Label>
-        <Input id="cellphone" name="cellphone" value={formData.cellphone} onChange={handleChange} required disabled />
+        <Input id="cellphone" name="cellphone" value={formData.cellphone} onChange={handleChange} required disabled={guestData.cellphone != ''} />
       </div>
 
       <div className="space-y-2">
