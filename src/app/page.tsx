@@ -61,7 +61,7 @@ export default function Home() {
         </div>
       </section>
 
-            {/* Reproductor de Música */}
+      {/* Reproductor de Música */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <ScrollReveal>
@@ -76,7 +76,7 @@ export default function Home() {
         </div>
       </section>
 
-          {/* Nuestra Historia */}
+      {/* Nuestra Historia */}
       <section className="py-20 bg-rose-50">
         <div className="container mx-auto px-4">
           <ScrollReveal>
@@ -168,8 +168,6 @@ export default function Home() {
           </ScrollReveal>
         </div>
       </section>
-
-
 
       {/* Galería de Fotos */}
       <section className="py-20 bg-rose-50">
@@ -321,11 +319,11 @@ export default function Home() {
                   <Heart className="w-8 h-8 text-rose-500" />
                 </div>
                 <p className="text-rose-700 italic text-center">
-                  &quot;El amor no se trata de mirarse el uno al otro, sino de
-                  mirar juntos en la misma dirección.&quot;
+                  Por tanto, dejará el hombre a su padre y a su madre, y se
+                  unirá a su mujer, y serán una sola carne;
                 </p>
                 <p className="text-rose-600 text-center mt-4 font-serif">
-                  - Antoine de Saint-Exupéry
+                  - Génesis 2:24
                 </p>
               </div>
 
@@ -334,12 +332,11 @@ export default function Home() {
                   <Heart className="w-8 h-8 text-rose-500" />
                 </div>
                 <p className="text-rose-700 italic text-center">
-                  &quot;En tus brazos, he encontrado un hogar; en tu corazón, he
-                  encontrado amor; en tu alma, he encontrado a mi mejor
-                  amigo.&quot;
+                  Así que no son ya más dos, sino una sola carne; por tanto, lo
+                  que Dios juntó, no lo separe el hombre.;
                 </p>
                 <p className="text-rose-600 text-center mt-4 font-serif">
-                  - Anónimo
+                  - Mateo 19:6
                 </p>
               </div>
 
@@ -348,12 +345,11 @@ export default function Home() {
                   <Heart className="w-8 h-8 text-rose-500" />
                 </div>
                 <p className="text-rose-700 italic text-center">
-                  &quot;Contigo aprendí que el amor no se trata de encontrar a
-                  alguien con quien vivir, sino de encontrar a alguien sin quien
-                  no puedes vivir.&quot;
+                  Mejores son dos que uno; porque tienen mejor paga de su
+                  trabajo. Porque si cayeren, el uno levantará a su compañero…;
                 </p>
                 <p className="text-rose-600 text-center mt-4 font-serif">
-                  - Anónimo
+                  - Eclesiastés 4:9-10
                 </p>
               </div>
 
@@ -362,19 +358,16 @@ export default function Home() {
                   <Heart className="w-8 h-8 text-rose-500" />
                 </div>
                 <p className="text-rose-700 italic text-center">
-                  &quot;El amor es como el viento, no puedes verlo pero puedes
-                  sentirlo.&quot;
+                  Porque así como el cuerpo es uno solo, pero tiene muchos miembros, y todos los miembros del cuerpo, aunque son muchos, forman un solo cuerpo, así también Cristo... Pues el cuerpo no consta de un solo miembro, sino de muchos.;
                 </p>
                 <p className="text-rose-600 text-center mt-4 font-serif">
-                  - Nicholas Sparks
+                  - 1 Corintios 12:12
                 </p>
               </div>
             </div>
           </ScrollReveal>
         </div>
       </section>
-
-
 
       {/* Código de Vestimenta y Reglas */}
       <section className="py-20 bg-rose-50">
